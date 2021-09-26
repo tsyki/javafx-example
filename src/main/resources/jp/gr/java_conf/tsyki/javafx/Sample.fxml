@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
-<?import javafx.scene.layout.VBox?>
-	
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
 <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.gr.java_conf.tsyki.javafx.SampleController">
 	<!-- TODO Add Nodes -->
+	<Text text="hoge" />
 </VBox>
