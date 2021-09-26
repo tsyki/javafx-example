@@ -7,6 +7,16 @@
 <?import javafx.scene.text.*?>
 
 <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.gr.java_conf.tsyki.javafx.SampleController">
-	<!-- TODO Add Nodes -->
-	<Text text="hoge" />
+	<HBox>
+		<TextField fx:id="addText" />
+		<Button fx:id="addButton" onAction="#add" text="追加"/>
+	</HBox>
+	<HBox>
+		<Label text="編集不可" minWidth="70"/>
+		<TableView fx:id="readOnlyTable" />
+	</HBox>
+	<HBox>
+		<Label text="編集可" minWidth="70" />
+		<TableView fx:id="editableTable" />
+	</HBox>
 </VBox>
