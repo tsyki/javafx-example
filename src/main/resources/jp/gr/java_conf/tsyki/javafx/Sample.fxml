@@ -7,6 +7,49 @@
 <?import javafx.scene.text.*?>
 
 <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.gr.java_conf.tsyki.javafx.SampleController">
-	<!-- TODO Add Nodes -->
-	<Text text="hoge" />
+	<!-- VBoxのpaddingを設定 -->
+	<padding>
+		<Insets top="25" right="25" bottom="10" left="25" />
+	</padding>
+	<HBox>
+		<!-- HBoxのpaddingを設定 -->
+		<padding>
+			<Insets top="5" right="10" bottom="5" left="10" />
+		</padding>
+		<Text text="入力項目1" />
+		<TextField>
+			<!-- TextFieldのmarginを設定 -->
+			<HBox.margin>
+				<Insets top="0" right="10" bottom="0" left="5" />
+			</HBox.margin>
+		</TextField>
+		<Text text="入力項目2" />
+		<TextField>
+			<!-- TextFieldのmarginを設定 -->
+			<HBox.margin>
+				<Insets top="0" right="10" bottom="0" left="5" />
+			</HBox.margin>
+		</TextField>
+	</HBox>
+	<!-- HBoxの中の部品を縦中央揃え、左寄せ -->
+	<HBox alignment="CENTER_LEFT">
+		<!-- HBoxのpaddingを設定 -->
+		<padding>
+			<Insets top="5" right="10" bottom="5" left="10" />
+		</padding>
+		<Text text="入力項目3" />
+		<TextField >
+			<!-- TextFieldのmarginを設定 -->
+			<HBox.margin>
+				<Insets top="0" right="0" bottom="0" left="5" />
+			</HBox.margin>
+		</TextField>
+		<VBox>
+			<padding>
+				<Insets top="0" right="0" bottom="0" left="10" />
+			</padding>
+			<Button text="読込"/>
+			<Button text="保存"/>
+		</VBox>
+	</HBox>
 </VBox>
