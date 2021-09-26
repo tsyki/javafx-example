@@ -7,6 +7,12 @@
 <?import javafx.scene.text.*?>
 
 <VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.gr.java_conf.tsyki.javafx.SampleController">
-	<!-- TODO Add Nodes -->
-	<Text text="hoge" />
+	<HBox>
+		<TextField />
+		<Button fx:id="searchButton" onAction="#search" text="検索"
+						minWidth="60" maxWidth="60" />
+	</HBox>
+	<HBox>
+		<TextArea fx:id="searchResultTextArea" />
+	</HBox>
 </VBox>
