@@ -3,4 +3,9 @@
   <groupId>jp.gr.java_conf.tsyki</groupId>
   <artifactId>java-fx-example</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
 </project>
